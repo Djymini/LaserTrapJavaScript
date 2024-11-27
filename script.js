@@ -239,6 +239,7 @@ function search(a) {
 var questionName = prompt("Que recherchez vous ?");
 search(questionName);*/
 
+/*
 //Exercice 6 bis
 const aries = `♈`;
 const taurus = `♉`;
@@ -265,7 +266,71 @@ console.log(fireSigns[fireSigns.length - 1] === "♐" ? "Good Answer ✅" : "Wro
 var zodiacSigns = [];
 zodiacSigns = fireSigns.concat(earthSigns, waterSigns, airSigns);
 console.log(zodiacSigns);
+*/
 
+//Exercice7
+const billyTheCat = {
+  name: "billy",
+  color: "black",
+  favouriteFoods: ["fish", "chicken"],
+  isHungry: true,
+  meow: function() {
+      return "Meeeeeeeow";
+  }
+}
+
+const animals = [
+  {name: "kitty", species: "cat", noise: "meow"},
+  {name: "skaly", species: "squale", noise: "frrrrrr"},
+  {name: "wormy", species: "worm", noise: "????"},
+  {name: "Pikatchue", species: "electrick mouse", noise: "pikaaaaa"}
+];
+
+console.log(billyTheCat.name);
+console.log(billyTheCat.color);
+console.log(billyTheCat.favouriteFoods);
+console.log(billyTheCat.isHungry);
+console.log(billyTheCat.meow);
+
+let test = prompt("Entrer votre clé");
+switch (test) {
+  case test = "name":
+    console.log(billyTheCat.name);
+    break;
+  case test = "color":
+    console.log(billyTheCat.color);
+    break;
+  case test = "favoriteFoods":
+    console.log(billyTheCat.favouriteFoods);
+    break;
+  case test = "isHungry":
+    console.log(billyTheCat.isHungry);
+    break;
+  case test = "meow":
+    console.log(billyTheCat.meow);
+    break;
+  default:
+    break;
+}
+
+console.log(animals[animals.length - 1]);
+
+delete animals[1].name;
+delete animals[2].species;
+animals[0].name = animals[3].name;
+console.log(animals);
+
+const apple = {
+  isEaten: false,
+  eat: function() {
+     return this.isEaten ? "le fruit a déjà été mangé" : this.isEaten = true;
+  }
+}
+
+apple.eat();
+if (apple.isEaten) {
+  console.log(apple.eat());
+}
 
 /*const canvas = document.getElementById("canvasGame");
 const ctx = canvas.getContext("2d");
