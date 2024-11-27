@@ -1,3 +1,4 @@
+/*
 //Exercice 1
 console.log("EXERCICE1");
 console.log("J'aime peindre");
@@ -162,6 +163,38 @@ if (n6%2 == 0) {
 }
 else {
   console.log(n6 + ' est impair');
+}*/
+
+//Exercice 5
+function addKevin(a,b){
+  return a+b;
+}
+console.log(addKevin(2,8))
+
+function mathKevin(a,b) {
+  return Math.sqrt(a) + Math.pow(b,7);
+}
+
+console.log(mathKevin(2,8))
+
+function question() {
+  let question1 = prompt("Quel langage faut-il apprendre avant de faire du java script ?");
+  let question2 = prompt("Quel est l'autre langage à apprendre avant de faire du java script ?");
+  if (question1 == "html" && question2 == "css") {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+let startFormation = question();
+
+if (startFormation) {
+  console.log("Bienvenue en JS jeune éphèbe");
+}
+else {
+  console.log("Solidifie tes acquis : rien n’est impossible à qui rêve, ose, travaille et n’abandonne jamais");
 }
 
 
