@@ -5,7 +5,6 @@ console.log("J'aime peindre. J'aimerai devenir peintre");
 console.warn("Mais cela demande beaucoup d'effort")
 console.error("Je n'ai pas assez de temps car j'ai déjà un métier, 3 passions, une femme et 4 enfants et je dois dormir la nuit");
 
-//Exercice 2
 const number1 = 99;//
 const number2 = 50;//
 const number3 = 1;//
@@ -27,6 +26,21 @@ console.log(set3);
 console.log(6%2);
 console.log(14%4);
 console.log(99%3);
+
+//Exercice 2
+const name = "Bruno";
+
+const description = "Salut je m'appelle Bruno et voici ma description";
+
+let work = "Analyste financier au Yémen";
+
+let age = 23;
+
+let city = "Bordeaux";
+
+let arrayNumber = "Une liste de nombres";
+
+let bondName = "le prénom du plus grand agent secret de tous les temps";
 
 /*const canvas = document.getElementById("canvasGame");
 const ctx = canvas.getContext("2d");
