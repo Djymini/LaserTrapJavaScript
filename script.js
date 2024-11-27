@@ -163,7 +163,7 @@ if (n6%2 == 0) {
 }
 else {
   console.log(n6 + ' est impair');
-}*/
+}
 
 //Exercice 5
 function addKevin(a,b){
@@ -195,8 +195,76 @@ if (startFormation) {
 }
 else {
   console.log("Solidifie tes acquis : rien n’est impossible à qui rêve, ose, travaille et n’abandonne jamais");
-}
+}*/
 
+/*
+//Exercice 6
+const characterNames = [
+  "63AIS",
+  "A'misandra",
+  "Amimari",
+  "Alika",
+  "54B2",
+  "A'merpact",
+  "Amazora",
+];
+console.log("Afficher le nombre de personnages dans le tableau  : ");
+console.log("Le nombre de personnage est :" + characterNames.length);
+console.log("Afficher le nom du premier personnage du tableau : ");
+console.log("Le nom du premier personnage est :" + characterNames[0]);
+console.log("Afficher le nom du dernier personnage (le 7eme) : ");
+console.log("Le nom du dernier personnage est :" + characterNames[characterNames.length-1])
+console.log("Afficher le nom de chaque personnage accompagné de l'index : ")
+for (let index = 0; index < characterNames.length; index++) {
+  console.log(characterNames[index] + " ("+index+")");
+}
+console.log("Afficher le nom de chaque personnage en minuscules : ");
+for (let index = 0; index < characterNames.length; index++) {
+  console.log(characterNames[index].toLowerCase());
+}
+console.log("Afficher le nombre de personnages dont le nom qui ont la lettre a");
+for (let index = 0; index < characterNames.length; index++) {
+  if (characterNames[index].indexOf("a") > -1) {
+    console.log(characterNames[index]);
+  }
+}
+console.log("Créer une fonction `search(needle)");
+function search(a) {
+  for (let index = 0; index < characterNames.length; index++) {
+    if (characterNames[index].indexOf(a) > -1) {
+      console.log(characterNames[index]);
+    } 
+  }
+}
+var questionName = prompt("Que recherchez vous ?");
+search(questionName);*/
+
+//Exercice 6 bis
+const aries = `♈`;
+const taurus = `♉`;
+const gemini = `♊`;
+const cancer = `♋`;
+const leo = `♌`;
+const virgo = `♍`;
+const libra = `♎`;
+const scorpio = `♏`;
+const sagittarius = `♐`;
+const capricorn = `♑`;
+const aquarius = `♒`;
+const pisces = `♓︎`;
+
+const fireSigns = [aries, leo];
+const earthSigns = [taurus, virgo, capricorn, sagittarius];
+const airSigns = [gemini, libra, aquarius];
+const waterSigns = [cancer, scorpio, pisces];
+
+fireSigns.push(sagittarius);
+console.log(fireSigns);
+console.log(fireSigns[fireSigns.length - 1] === "♐" ? "Good Answer ✅" : "Wrong Answer ❌");
+
+var zodiacSigns = [];
+zodiacSigns = fireSigns.concat(earthSigns, waterSigns, airSigns);
+console.log(zodiacSigns);
 
 
 /*const canvas = document.getElementById("canvasGame");
