@@ -5,8 +5,6 @@ let y = canvas.height /2;
 let dx = 0;
 let dy = -2;
 
-console.log("Hello World");
-
 
 function drawBall() {
     ctx.beginPath();
