@@ -5,6 +5,7 @@ let y = canvas.height /2;
 let dx = 0;
 let dy = -2;
 
+console.log("Coucou Hibou coucou hibou");
 
 function drawBall() {
     ctx.beginPath();
